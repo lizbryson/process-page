@@ -1,4 +1,5 @@
 import ListItem from './Components/ListItem/ListItem';
+
 const Section = ({ sectionIndex, content }) => {
   const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index}/>);
   return (
