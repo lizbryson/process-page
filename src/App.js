@@ -70,10 +70,10 @@ function App() {
       </main>
       <footer className="App-footer">
         <div className="container">
-          <a>Portfolio</a>
-          <a>LinkedIn</a>
-          <a>GitHub</a>
-          <a>Dribbble</a>
+          <a href="https://www.lizbryson.co">Portfolio</a>
+          <a href="https://www.linkedin.com/in/lizbryson">LinkedIn</a>
+          <a href="https://www.github.com/lizbryson">GitHub</a>
+          <a href="https://dribbble.com/liz_bryson">Dribbble</a>
         </div>
       </footer>
     </div>
