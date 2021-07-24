@@ -1,0 +1,36 @@
+li.active {
+  background-color: #f7f7f7;
+  padding: 2rem;
+}
+
+li.active a {
+  color: #e0405b;
+}
+
+.btn-container li {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.btn-container li p {
+  display: none;
+}
+.btn-container li:first-child {
+  display: inline-block;
+}
+.btn-container li.active p {
+  display: block;
+}
+.btn-container li:hover {
+  background-color: #f7f7f7;
+}
+
+.btn-container li:first-child {
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  padding: .625rem 1rem;
+  font-size: .675rem;
+  display: inline-block;
+}
