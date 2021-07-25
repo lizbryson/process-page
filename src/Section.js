@@ -12,7 +12,7 @@ const Section = ({ sectionIndex, content }) => {
       const img = new Image();
       img.src = item.image;
     })
-  }, [])
+  }, [content.steps])
 
   const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index} setImage={setImage} />);
   

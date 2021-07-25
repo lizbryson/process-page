@@ -1,7 +1,9 @@
 body * {
   box-sizing: border-box;
 }
-
+.lazyload {
+  border: 5px solid red;
+}
 .page-title {
 font-size: 6rem;
 padding: 9rem 0 0 0;
