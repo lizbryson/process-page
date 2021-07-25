@@ -4,7 +4,6 @@ import { gsap } from "gsap"
 const ListItem = ({ item, index, setImage, setLayout }) => {
 
   const animateLayout = (style) => {
-    // console.log(style);
     if (style === 'single') {
       gsap.to(".example-image__img", {
         width: '84%', duration: 1
@@ -22,12 +21,9 @@ const ListItem = ({ item, index, setImage, setLayout }) => {
     Array.from(a).forEach(x => x.classList.remove('active'));
     target.classList.toggle('active');
 
-    setImage(item.image);
+    setImage(item.images);
     setLayout((prevStyle) => {
-      console.log('prev: ' + prevStyle);
-      console.log('next: ' + item.style);
       if (item.style && (prevStyle !== item.style)) {
-        console.log('change style');
         animateLayout(item.style);
       }
       return item.style;

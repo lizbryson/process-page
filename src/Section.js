@@ -5,7 +5,7 @@ import ImageHalf from './Components/ImageHalf/ImageHalf';
 
 const Section = ({ sectionIndex, content }) => {
   
-  const [image, setImage] = useState(content.steps[0].image);
+  const [images, setImage] = useState(content.steps[0].images);
   const [layout, setLayout] = useState(content.steps[0].style || 'double');
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Section = ({ sectionIndex, content }) => {
             <li>How I {content.title}:</li>
             { sectionSteps }
           </ul>
-          <ImageHalf image={image} style={layout} />
+          <ImageHalf images={images} style={layout} />
         </div>
    
       </div>

@@ -3,8 +3,19 @@ body * {
 }
 
 .page-title {
+font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .page-title {
+font-size: 2.5rem;
+width: 90%;
+
+}
+}
+@media screen and (min-width: 992px) {
+  .page-title {
 font-size: 3.75rem;
-padding: 14rem 0 5rem 0;
+}
 }
 
 .page-title a {
@@ -17,31 +28,43 @@ padding: 14rem 0 5rem 0;
   font-size: .75rem;
   text-transform: uppercase;
 }
-
+.App-header__hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .App-header__nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  top: 0;
+  bottom: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 10;
-  background-color: rgb(245, 230, 230);
   text-align: center;
   border-bottom: 1px solid;
+  display: flex;
+  border-top: 1px solid;
 }
 .App-header__nav li {
   display: inline-block;
   font-weight: bold;
-  padding: .5rem 1rem;
-  width: 25%;
+  padding: .75rem 1rem;
+  width: 20%;
+  flex-grow: 1;
   font-size: .875rem;
   border-left: 1px solid;
 }
 
 .App-header__nav li:first-child {
   border-left: none;
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  flex-grow: 0;
 }
 
 a {
