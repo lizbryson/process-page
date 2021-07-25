@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ListItem from './Components/ListItem/ListItem';
 import ImageHalf from './Components/ImageHalf/ImageHalf';
 
@@ -7,7 +7,15 @@ const Section = ({ sectionIndex, content }) => {
   
   const [image, setImage] = useState(content.steps[0].image);
 
-  const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index} setImage={setImage}/>);
+  useEffect(() => {
+    content.steps.forEach(item => {
+      const img = new Image();
+      img.src = item.image;
+    })
+  }, [])
+
+  const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index} setImage={setImage} />);
+  
   return (
   <section>
       <div className="container">
