@@ -1,7 +1,13 @@
+import { useState } from 'react';
 import ListItem from './Components/ListItem/ListItem';
+import ImageHalf from './Components/ImageHalf/ImageHalf';
+
 
 const Section = ({ sectionIndex, content }) => {
-  const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index}/>);
+  
+  const [image, setImage] = useState(content.steps[0].image);
+
+  const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index} setImage={setImage}/>);
   return (
   <section>
       <div className="container">
@@ -15,11 +21,7 @@ const Section = ({ sectionIndex, content }) => {
             <li>How I {content.title}:</li>
             { sectionSteps }
           </ul>
-          <div className="example-image">
-            <div className="example-image__inner">
-              <div></div>
-            </div>
-          </div>
+          <ImageHalf image={image} />
         </div>
    
       </div>
@@ -28,3 +30,4 @@ const Section = ({ sectionIndex, content }) => {
 }
 
 export default Section;
+
