@@ -10,16 +10,23 @@ const ListItem = ({ item, index, setImage, setLayout }) => {
       });
     } else {
       gsap.to(".example-image__img", {
-      width: '50%', duration: 1
+        width: '50%', duration: 1
       });
     }
   } 
   
   const handleClick = ({ target }) => {
-    let parent = target.parentElement;
-    let a = parent.getElementsByClassName("active");
-    Array.from(a).forEach(x => x.classList.remove('active'));
-    target.classList.toggle('active');
+    // let parent = target.parentElement;
+    let currentDesc = target.children[1];
+    gsap.to(currentDesc, {
+      height: 100
+    })
+  
+    // Array.from(a).forEach(x => {
+    //   gsap.to(x.children[1], {
+    //   height: 0
+    //   })
+    // });
 
     setImage(item.images);
     setLayout((prevStyle) => {
@@ -31,7 +38,7 @@ const ListItem = ({ item, index, setImage, setLayout }) => {
 
   }
 
-  const listClasses = index === 0 ? 'active' : 'collapsed';
+  const listClasses = index === 0 ? 'test' : 'collapsed';
   return (
     <li className={listClasses} onClick={handleClick}>
       <span className="toggleBtn">{item.title}</span>

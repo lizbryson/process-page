@@ -9,6 +9,7 @@ font-size: 2rem;
   .page-title {
 font-size: 2.5rem;
 width: 90%;
+/* line-height: 1.3; */
 
 }
 }
@@ -17,16 +18,28 @@ width: 90%;
 font-size: 3.75rem;
 }
 }
+.page-title span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: .85rem;
+
+}
+.page-title span,
+.page-title a {
+  opacity: .5;
+  text-transform: uppercase;
+}
 
 .page-title a {
   display: inline-block;
+  font-size: .75rem;
+
   border-bottom: 1px solid;
   padding-bottom: .25rem;
-  vertical-align: middle;
-  margin-left: 2rem;
-  opacity: .5;
-  font-size: .75rem;
-  text-transform: uppercase;
+  vertical-align: text-top;
+  margin-left: .5rem;
+  margin-top: .5rem;
+
 }
 .App-header__hero {
   height: 100vh;
@@ -180,16 +193,23 @@ img {
 }
 .example-image__inner div {
   position: absolute;
-  top: 15%;
-  /* transition: 300ms ease top, 300ms ease width 100ms; */
   box-shadow: 0 0 64px 0 rgb(0 0 0 / 20%);
-
-  left: 8%;
   width: 50%;
-  height: 200%;
+  overflow: hidden;
+  height: 100%;
   background: #fcfcfc;
 }
 
+
+.example-image__inner div:first-child {
+  left: 8%;
+  top: 15%;
+  z-index: 5;
+}
+.example-image__inner div:last-child {
+  right: 8%;
+  bottom: 15%;
+}
 
 .btn-container p:last-child {
   margin-bottom: 0;

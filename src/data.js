@@ -9,6 +9,10 @@ export const strategize = {
         {
           src: '/goals-methodology.jpg',
           alt: ''
+        },
+        {
+          src: '/sitemap.jpg',
+          alt: ''
         }
       ]
 
@@ -39,6 +43,10 @@ export const strategize = {
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       style: 'double',
       images: [
+        {
+          src: '/wireframe.jpg',
+          alt: ''
+        },
         {
           src: '/wireframe.jpg',
           alt: ''
@@ -113,7 +121,7 @@ export const implement = {
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       images: [
         {
-          src: '',
+          src: '/code-editor.jpg',
           alt: ''
         }
       ]
@@ -157,12 +165,16 @@ export const test = {
         {
           src: '/heatmap.jpg',
           alt: ''
+       },
+       {
+          src: '/scrollmap.jpg',
+          alt: ''
         }
       ]
     },
     {
       title: 'Conversion Tracking',
-      style: 'double',
+      style: 'single',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       images: [
         {

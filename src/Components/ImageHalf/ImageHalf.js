@@ -1,17 +1,17 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
+import LazyLoad from 'react-lazyload';
 import './ImageHalf.css';
 
 const ImageHalf = ({ images, style }) => {
 
-  const generateImages = () => images.map(image => {
+  const generateImages = () => images.map((image, index) => {
     return (
-      <div className="example-image__img">
-        <LazyLoadImage
-          alt="Goals and Methodology"
+      <LazyLoad
+        key={`project-image_${index}`}
+        className="example-image__img">
+          <img alt="Goals and Methodology"
           effect="opacity"
           src={image.src} />
-      </div>
+        </LazyLoad>
     )
   })
 
