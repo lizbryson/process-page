@@ -7,10 +7,12 @@ const strategize = {
   steps: [
     { title: 'Identify Goals + Methodology',
       description: 'What is the primary goal of the design? Who is our intended audience? How do we measure success? Asking these questions up front is key to building the infrastructure behind a project\'s design methodology.',
+      style: 'double',
       image: '/goals-methodology.jpg'
     },
     { title: 'Research',
       description: 'What has worked well for the brand in the past? What are competitors in our space doing right? Where are there opportunities to grow? Leveraging historical data, competitor analysis, and any other available materials helps set the stage for initial design iterations.',
+      style: 'double',
       image: '/moodboard.jpg'
     },
     { title: 'Sitemap',
@@ -21,6 +23,7 @@ const strategize = {
     {
       title: 'Wireframes',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      style: 'double',
       image: '/wireframe.jpg'
 
     }
@@ -34,10 +37,12 @@ const design = {
     {
       title: 'Moodboards and/or Brand Standards',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      style: 'double',
       image: '/moodboard.jpg'
     },
     {
       title: 'Exploratory Design',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       link: {
         type: 'figma',
@@ -46,10 +51,12 @@ const design = {
     },
     {
       title: 'Prototyping',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
     },
     {
       title: 'Feedback',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
     }
   ]
@@ -61,14 +68,17 @@ const implement = {
   steps: [
     {
       title: 'Handoff and/or Build',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
     },
     {
       title: 'Style Guide',
+      style: 'double',
       description: 'Appending brand style guides to include web standards and styles',
     },
     {
       title: 'Documentation',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       image: '/documentation.png'
 
@@ -82,20 +92,24 @@ const test = {
   steps: [
     {
       title: 'Heatmaps',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       'image': '/heatmap.jpg'
     },
     {
       title: 'Conversion Tracking',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       image: '/analytics.jpg'
     },
     {
       title: 'Direct Feedback',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
     },
     {
       title: 'Postmortem',
+      style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
     }
   ]

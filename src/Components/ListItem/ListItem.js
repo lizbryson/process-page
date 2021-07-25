@@ -1,15 +1,34 @@
 import './ListItem.css';
+import { gsap } from "gsap"
 
 const ListItem = ({ item, index, setImage, setLayout }) => {
-  console.log(item);
+
+  const animateLayout = (style) => {
+    if (style === 'single') {
+      gsap.to(".example-image__img", {
+        width: '84%', duration: 1
+      });
+    } else {
+      gsap.to(".example-image__img", {
+      width: '50%', duration: 1
+      });
+    }
+  }
+  
   const handleClick = ({ target }) => {
     let parent = target.parentElement;
     let a = parent.getElementsByClassName("active");
     Array.from(a).forEach(x => x.classList.remove('active'));
-    setImage(item.image);
-    setLayout(item.style);
-
     target.classList.toggle('active');
+
+    setImage(item.image);
+    setLayout((prevStyle) => {
+      if (item.style && prevStyle !== item.style) {
+        animateLayout(item.style);
+      }
+      return item.style;
+    });
+
   }
 
   const listClasses = index === 0 ? 'active' : 'collapsed';

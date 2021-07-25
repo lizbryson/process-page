@@ -143,13 +143,13 @@ img {
   overflow: hidden;
 }
 .example-image__inner:hover div {
-  top: 10%;
-  transition: 300ms ease top;
+  /* top: 10%; */
+  /* transition: 300ms ease top; */
 }
 .example-image__inner div {
   position: absolute;
   top: 15%;
-  transition: 300ms ease top, 300ms ease width 100ms;
+  /* transition: 300ms ease top, 300ms ease width 100ms; */
   box-shadow: 0 0 64px 0 rgb(0 0 0 / 20%);
 
   left: 8%;
@@ -163,8 +163,3 @@ img {
   margin-bottom: 0;
 }
 
-
-.is-single .example-image__inner div {
-  width: 84%;
-  transition: 300ms ease-out width 400ms, 300ms ease top !important;
-}
