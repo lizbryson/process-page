@@ -43,3 +43,12 @@
   transition: 300ms ease opacity, 200ms ease top;
 
 }
+
+
+.is-triple .example-image__inner div {
+  height: 0;
+  padding-bottom: 33%;
+  left: 8%;
+  top: 15%;
+  z-index: 5;
+}

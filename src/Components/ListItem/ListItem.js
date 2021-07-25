@@ -1,33 +1,29 @@
 import './ListItem.css';
 import { gsap } from "gsap"
 
-const ListItem = ({ item, index, setImage, setLayout }) => {
+const ListItem = ({ item, index, setImage, setLayout, id }) => {
 
   const animateLayout = (style) => {
+    const targetClass = '.example-image__img.is-' + id;
     if (style === 'single') {
-      gsap.to(".example-image__img", {
-        width: '84%', duration: 1
+      gsap.to(targetClass, {
+        width: '84%', duration: 1,
+        left: '8%', top: '15%'
       });
+    } else if (style === 'triple') {
     } else {
-      gsap.to(".example-image__img", {
+      gsap.to(targetClass, {
         width: '50%', duration: 1
       });
     }
   } 
   
   const handleClick = ({ target }) => {
-    // let parent = target.parentElement;
     let currentDesc = target.children[1];
     gsap.to(currentDesc, {
-      height: 100
+      height: 150
     })
   
-    // Array.from(a).forEach(x => {
-    //   gsap.to(x.children[1], {
-    //   height: 0
-    //   })
-    // });
-
     setImage(item.images);
     setLayout((prevStyle) => {
       if (item.style && (prevStyle !== item.style)) {
@@ -44,7 +40,7 @@ const ListItem = ({ item, index, setImage, setLayout }) => {
       <span className="toggleBtn">{item.title}</span>
       <div className="item__description">
         <p>{item.description}</p>
-        {item.link && <a href={item.link.url}>View in Figma</a>}
+        {item.link && <a href={item.link.url} target="_blank" rel="noreferrer">View in {item.link.type}</a>}
       </div>
 
     </li>

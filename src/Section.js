@@ -15,7 +15,15 @@ const Section = ({ sectionIndex, content }) => {
     })
   }, [content.steps])
 
-  const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index} setImage={setImage} setLayout={setLayout} />);
+  const sectionSteps = content.steps.map((item, index) => (
+    <ListItem key={'toggle_' + index}
+              item={item}
+              index={index}
+              setImage={setImage}
+              setLayout={setLayout}
+              id={content.title.toLowerCase()}
+    />)
+  );
   
   return (
     <section id={content.title.toLowerCase()}>
@@ -30,7 +38,7 @@ const Section = ({ sectionIndex, content }) => {
             <li>How I {content.title}:</li>
             { sectionSteps }
           </ul>
-          <ImageHalf images={images} style={layout} />
+          <ImageHalf images={images} style={layout} id={content.title.toLowerCase()} />
         </div>
    
       </div>

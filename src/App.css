@@ -9,13 +9,14 @@ font-size: 2rem;
   .page-title {
 font-size: 2.5rem;
 width: 90%;
+max-width: 1000px;
 /* line-height: 1.3; */
 
 }
 }
 @media screen and (min-width: 992px) {
   .page-title {
-font-size: 3.75rem;
+font-size: 3.55rem;
 }
 }
 .page-title span {
@@ -23,6 +24,9 @@ font-size: 3.75rem;
   margin-bottom: 1rem;
   font-size: .85rem;
 
+}
+.page-title + h1 {
+  /* margin-left: auto; */
 }
 .page-title span,
 .page-title a {
@@ -38,7 +42,7 @@ font-size: 3.75rem;
   padding-bottom: .25rem;
   vertical-align: text-top;
   margin-left: .5rem;
-  margin-top: .5rem;
+  margin-top: .875rem;
 
 }
 .App-header__hero {
@@ -206,7 +210,7 @@ img {
   top: 15%;
   z-index: 5;
 }
-.example-image__inner div:last-child {
+.is-double .example-image__inner div:last-child {
   right: 8%;
   bottom: 15%;
 }

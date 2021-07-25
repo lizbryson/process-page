@@ -8,7 +8,8 @@ function App() {
       <header className="App-header">
         <div className="App-header__hero">
           <div className="container">
-            <h1 className="page-title"><span>My Guiding Principle:</span>A successful visual design does not take away from the content on the page or function. Instead, it enhances it by engaging users and helping to build trust and interest in the brand.
+            <h1 className="page-title">A successful visual design does not take away from the content on the page or function.</h1>
+            <h1 className="page-title">Instead, it enhances it by engaging users and helping to build trust and interest in the brand.
               <a href="https://www.usability.gov/what-and-why/visual-design.html" target="_blank" rel="noreferrer">Source</a>
             </h1>
           </div>

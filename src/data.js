@@ -24,6 +24,10 @@ export const strategize = {
         {
           src: '/moodboard.jpg',
           alt: ''
+        },
+        {
+          src: '/moodboard-2.jpg',
+          alt: ''
         }
       ]
     },
@@ -61,22 +65,49 @@ export const design = {
   intro: 'Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.',
   steps: [
     {
-      title: 'Moodboards and/or Brand Standards',
+      title: 'External Inspiration',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       style: 'double',
       images: [
         {
           src: '/moodboard.jpg',
           alt: ''
+        },
+         {
+          src: '/moodboard-2.jpg',
+          alt: ''
         }
       ]
     },
     {
       title: 'Exploratory Design',
+      style: 'triple',
+      description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      link: {
+        type: 'Figma',
+        url: 'https://www.figma.com/file/tr6K63Z046345LrVkODtqG/Vendavo?node-id=0%3A1'
+      },
+      images: [
+        {
+          src: '/explore-1.jpg',
+          alt: ''
+        },
+        {
+          src: '/explore-2.jpg',
+          alt: ''
+        },
+        {
+          src: '/explore-3.jpg',
+          alt: ''
+        }
+      ]
+    },
+    {
+      title: 'Prototyping',
       style: 'double',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       link: {
-        type: 'figma',
+        type: 'Invision',
         url: '/'
       },
       images: [
@@ -87,23 +118,12 @@ export const design = {
       ]
     },
     {
-      title: 'Prototyping',
-      style: 'double',
-      description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
-      images: [
-        {
-          src: '',
-          alt: ''
-        }
-      ]
-    },
-    {
       title: 'Feedback',
-      style: 'double',
+      style: 'single',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       images: [
         {
-          src: '',
+          src: '/communication.jpg',
           alt: ''
         }
       ]
