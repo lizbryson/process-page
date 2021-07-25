@@ -15,7 +15,11 @@ const ListItem = ({ item, index, setImage }) => {
   return (
     <li className={listClasses} onClick={handleClick}>
       <a href="/" className="toggleBtn">{item.title}</a>
-      <p>{item.description}</p>
+      <div className="item__description">
+        <p>{item.description}</p>
+        {item.link && <a href={item.link.url}>View in Figma</a>}
+      </div>
+
     </li>
   )
 }

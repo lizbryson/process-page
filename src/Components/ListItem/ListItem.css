@@ -13,14 +13,30 @@ li.active a {
   border-right: 1px solid #000;
   border-left: 1px solid #000;
 }
-.btn-container li p {
-  display: none;
+.btn-container .item__description {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  /* transition: 300ms ease max-height; */
+
+}
+.btn-container .item__description a {
+  /* background-color: #fff; */
+  display: inline-block;
+  color: #000;
+  font-size: .75rem;
+  border: 1px solid #000;
+  margin-top: .5rem;
+  font-weight: bold;
+  padding: .25rem .5rem;
 }
 .btn-container li:first-child {
   display: inline-block;
 }
-.btn-container li.active p {
-  display: block;
+.btn-container li.active .item__description {
+  opacity: 1;
+  max-height: 500px;
+  transition: 500ms ease max-height;
 }
 .btn-container li:hover {
   background-color: #f7f7f7;

@@ -15,7 +15,7 @@ const strategize = {
     },
     { title: 'Sitemap',
       description: 'For larger website projects, sitemaps provide 30,000 foot view of the scope of work. This holisitc picture keeps me and my cross-functional team members aligned and ensures that no small piece of the proejct gets left behind at launch time.',
-      image: '/sitemap.jpg'
+      image: '/sitemap-spreadsheet.jpg'
 
     },
     {
@@ -39,6 +39,10 @@ const design = {
     {
       title: 'Exploratory Design',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      link: {
+        type: 'figma',
+        url: '/'
+      }
     },
     {
       title: 'Prototyping',
@@ -66,6 +70,8 @@ const implement = {
     {
       title: 'Documentation',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      image: '/documentation.png'
+
     }
   ]
 }
@@ -77,6 +83,7 @@ const test = {
     {
       title: 'Heatmaps',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      'image': '/heatmap.jpg'
     },
     {
       title: 'Conversion Tracking',
