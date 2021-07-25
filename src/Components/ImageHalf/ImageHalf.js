@@ -2,9 +2,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import './ImageHalf.css';
 
-const ImageHalf = ({ image }) => {
+const ImageHalf = ({ image, style }) => {
   return (
-    <div className="example-image">
+    <div className={`example-image is-${style}`}>
       <div className="example-image__inner">
         <div>
           {/* <span className="example-image__dot">

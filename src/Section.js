@@ -6,6 +6,7 @@ import ImageHalf from './Components/ImageHalf/ImageHalf';
 const Section = ({ sectionIndex, content }) => {
   
   const [image, setImage] = useState(content.steps[0].image);
+  const [layout, setLayout] = useState(content.steps[0].style || 'double');
 
   useEffect(() => {
     content.steps.forEach(item => {
@@ -14,10 +15,10 @@ const Section = ({ sectionIndex, content }) => {
     })
   }, [content.steps])
 
-  const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index} setImage={setImage} />);
+  const sectionSteps = content.steps.map((item, index) => <ListItem key={'toggle_' + index} item={item} index={index} setImage={setImage} setLayout={setLayout} />);
   
   return (
-  <section>
+    <section id={content.title.toLowerCase()}>
       <div className="container">
         <div className="section-header">
           <p className="step">{sectionIndex}</p>
@@ -29,7 +30,7 @@ const Section = ({ sectionIndex, content }) => {
             <li>How I {content.title}:</li>
             { sectionSteps }
           </ul>
-          <ImageHalf image={image} />
+          <ImageHalf image={image} style={layout} />
         </div>
    
       </div>

@@ -1,13 +1,14 @@
 import './ListItem.css';
 
-const ListItem = ({ item, index, setImage }) => {
+const ListItem = ({ item, index, setImage, setLayout }) => {
+  console.log(item);
   const handleClick = ({ target }) => {
     let parent = target.parentElement;
     let a = parent.getElementsByClassName("active");
-    console.log(a);
     Array.from(a).forEach(x => x.classList.remove('active'));
-
     setImage(item.image);
+    setLayout(item.style);
+
     target.classList.toggle('active');
   }
 

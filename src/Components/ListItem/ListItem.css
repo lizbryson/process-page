@@ -17,8 +17,6 @@ li.active a {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  /* transition: 300ms ease max-height; */
-
 }
 .btn-container .item__description a {
   /* background-color: #fff; */

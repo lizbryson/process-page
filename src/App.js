@@ -15,8 +15,8 @@ const strategize = {
     },
     { title: 'Sitemap',
       description: 'For larger website projects, sitemaps provide 30,000 foot view of the scope of work. This holisitc picture keeps me and my cross-functional team members aligned and ensures that no small piece of the proejct gets left behind at launch time.',
-      image: '/sitemap-spreadsheet.jpg'
-
+      style: 'single',
+      image: '/sitemap.jpg'
     },
     {
       title: 'Wireframes',
@@ -32,7 +32,7 @@ const design = {
   intro: 'Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.',
   steps: [
     {
-      title: 'Moodboards',
+      title: 'Moodboards and/or Brand Standards',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
       image: '/moodboard.jpg'
     },
@@ -65,7 +65,7 @@ const implement = {
     },
     {
       title: 'Style Guide',
-      description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      description: 'Appending brand style guides to include web standards and styles',
     },
     {
       title: 'Documentation',
@@ -88,6 +88,7 @@ const test = {
     {
       title: 'Conversion Tracking',
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      image: '/analytics.jpg'
     },
     {
       title: 'Direct Feedback',
@@ -106,10 +107,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <ul className="App-header__nav">
-          <li>Strategize</li>
-          <li>Design</li>
-          <li>Implement</li>
-          <li>Test</li>
+          <li><a href="#strategize">Strategize</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#implement">Implement</a></li>
+          <li><a href="#test">Test</a></li>
         </ul>
       </header>
       <main className="App-main">
