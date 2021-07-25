@@ -74,7 +74,7 @@ const implement = {
     {
       title: 'Style Guide',
       style: 'double',
-      description: 'Appending brand style guides to include web standards and styles',
+      description: 'Appending brand style guides to include web standards and styles. Integrate updates into the design system (UI Library, Sketch or Figma file system). Results in a continous, scalable, efficient design.',
     },
     {
       title: 'Documentation',
@@ -108,9 +108,9 @@ const test = {
       description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
     },
     {
-      title: 'Postmortem',
+      title: 'Repeat',
       style: 'double',
-      description: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.',
+      description: 'Every iteration is a chance to learn and polish designs',
     }
   ]
 }
@@ -129,7 +129,9 @@ function App() {
       </header>
       <main className="App-main">
         <div className="container">
-        <h1 className="page-title">Process</h1>
+          <h1 className="page-title">A successful visual design does not take away from the content on the page or function. Instead, it enhances it by engaging users and helping to build trust and interest in the brand.
+            <a href="https://www.usability.gov/what-and-why/visual-design.html" target="_blank" rel="noreferrer">Source</a>
+          </h1>
           
           </div>
         

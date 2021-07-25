@@ -13,11 +13,7 @@ li.active a {
   border-right: 1px solid #000;
   border-left: 1px solid #000;
 }
-.btn-container .item__description {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-}
+
 .btn-container .item__description a {
   /* background-color: #fff; */
   display: inline-block;
@@ -31,11 +27,7 @@ li.active a {
 .btn-container li:first-child {
   display: inline-block;
 }
-.btn-container li.active .item__description {
-  opacity: 1;
-  max-height: 500px;
-  transition: 500ms ease max-height;
-}
+
 .btn-container li:hover {
   background-color: #f7f7f7;
 }

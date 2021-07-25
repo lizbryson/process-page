@@ -4,6 +4,7 @@ import { gsap } from "gsap"
 const ListItem = ({ item, index, setImage, setLayout }) => {
 
   const animateLayout = (style) => {
+    // console.log(style);
     if (style === 'single') {
       gsap.to(".example-image__img", {
         width: '84%', duration: 1
@@ -13,7 +14,7 @@ const ListItem = ({ item, index, setImage, setLayout }) => {
       width: '50%', duration: 1
       });
     }
-  }
+  } 
   
   const handleClick = ({ target }) => {
     let parent = target.parentElement;
@@ -23,7 +24,10 @@ const ListItem = ({ item, index, setImage, setLayout }) => {
 
     setImage(item.image);
     setLayout((prevStyle) => {
-      if (item.style && prevStyle !== item.style) {
+      console.log('prev: ' + prevStyle);
+      console.log('next: ' + item.style);
+      if (item.style && (prevStyle !== item.style)) {
+        console.log('change style');
         animateLayout(item.style);
       }
       return item.style;
@@ -34,7 +38,7 @@ const ListItem = ({ item, index, setImage, setLayout }) => {
   const listClasses = index === 0 ? 'active' : 'collapsed';
   return (
     <li className={listClasses} onClick={handleClick}>
-      <a href="/" className="toggleBtn">{item.title}</a>
+      <span className="toggleBtn">{item.title}</span>
       <div className="item__description">
         <p>{item.description}</p>
         {item.link && <a href={item.link.url}>View in Figma</a>}
