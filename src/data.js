@@ -3,7 +3,7 @@ export const strategize = {
   intro: 'A strong strategy is the springboard for success on every design project. From landing pages and social media strategy to full website overhauls, projects of all sizes benefit from clearly defined goals and team alignment across deliverables, targets, timelines, and more.',
   steps: [
     { title: 'Identify Goals + Methodology',
-      description: 'What is the primary goal of the design? Who is our intended audience? How do we measure success? Asking these questions up front is key to building the infrastructure behind a project\'s design methodology.',
+      description: 'What is the primary goal of the design? Who is our intended audience? What KPIs are we using to measure success? Asking these questions up front is key to building the infrastructure behind a project\'s design methodology.',
       style: 'double',
       images: [
         {

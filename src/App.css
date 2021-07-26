@@ -210,9 +210,13 @@ img {
   top: 15%;
   z-index: 5;
 }
-.is-double .example-image__inner div:last-child {
+.is-double .example-image__inner div:nth-child(2) {
   right: 8%;
   bottom: 15%;
+}
+
+.example-image__inner .is-empty {
+  opacity: 0;
 }
 
 .btn-container p:last-child {
