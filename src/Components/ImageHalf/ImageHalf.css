@@ -50,5 +50,16 @@
   padding-bottom: 33%;
   left: 8%;
   top: 15%;
+  /* z-index: 5; */
+}
+
+.is-triple .example-image__inner div:nth-child(2) {
+  z-index: 2;
+}
+.is-triple .example-image__inner div:nth-child(2) {
   z-index: 5;
+}
+
+.is-triple .example-image__inner div:nth-child(3) {
+  z-index: 10;
 }

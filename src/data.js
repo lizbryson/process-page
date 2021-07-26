@@ -112,7 +112,11 @@ export const design = {
       },
       images: [
         {
-          src: '',
+          src: '/prototype-1.jpg',
+          alt: ''
+        },
+        {
+          src: '/prototype-2.jpg',
           alt: ''
         }
       ]

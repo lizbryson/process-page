@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import ListItem from './Components/ListItem/ListItem';
 import ImageHalf from './Components/ImageHalf/ImageHalf';
-import { gsap } from "gsap"
+import { animateLayout } from './utils';
 
 const Section = ({ sectionIndex, content }) => {
   
@@ -11,7 +11,6 @@ const Section = ({ sectionIndex, content }) => {
 
 
   useEffect(() => {
-    
     content.steps.forEach(item => {
       const img = new Image();
       img.src = item.image;
@@ -19,78 +18,10 @@ const Section = ({ sectionIndex, content }) => {
   }, [content.steps]);
 
   useEffect(() => {
-
-  const animateLayout = (style) => {
-    const targetClass = '.example-image__img.is-' + content.title.toLowerCase();
-    if (style === 'single') {
-      gsap.to(targetClass, {
-        width: function (index) {
-          if (index === 0) {
-            return '84%';
-          }
-        },
-        duration: 1,
-        left: '8%',
-        top: '15%',
-        autoAlpha: function (index) {
-          if (index !== 0) {
-            return 0
-          } else {
-            return 1
-          }
-        }
-      });
-    } else if (style === 'double') {
-      gsap.to(targetClass, {
-        duration: 1,
-        width: function (index) {
-          if (index <= 1) {
-            return '50%';
-          }
-        },
-        left: function (index) {
-          if (index === 0) {
-            return '8%'
-          } else {
-            return 'auto'
-          }
-        },     
-        top: function (index) {
-          if (index === 0) {
-            return '15%'
-          } else {
-            return 'auto'
-          }
-        },
-        right: function (index) {
-          if (index === 1) {
-            return '8%'
-          } else {
-            return 'auto'
-          }
-        },
-        bottom: function (index) {
-           if (index === 1) {
-            return '15%'
-          } else {
-            return 'auto'
-          }
-        },
-        autoAlpha: function (index) {
-          if (index > 1) {
-            return 0
-          } else {
-            return 1
-          }
-        }
-      });
-    }
-  }
-
     if (isInitialMount.current) {
       isInitialMount.current = false;
     } else {
-      animateLayout(layout);
+      animateLayout(layout, content.title);
     }
 
   }, [content.title, layout]);
@@ -99,13 +30,10 @@ const Section = ({ sectionIndex, content }) => {
     <ListItem key={'toggle_' + index}
               item={item}
               index={index}
-              layout={layout}
-              images={images}
               setImage={setImage}
               setLayout={setLayout}
-              id={content.title.toLowerCase()}
-    />)
-  );
+    />
+  ));
   
   return (
     <section id={content.title.toLowerCase()}>
